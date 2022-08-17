@@ -676,8 +676,8 @@ body {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 0.875rem;
+  line-height: 135.7142857143%;
   text-transform: uppercase;
   color: #333333;
   max-width: 184px;
@@ -730,8 +730,8 @@ body {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 41px;
+  font-size: 1.875rem;
+  line-height: 136.6666666667%;
   color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,7 +814,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-.cards__columns__column {
+.cards__columns .columns__column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,16 +828,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 370px;
+  width: 100%;
 }
-.cards__columns__column:not(:last-child) {
+.cards__columns .columns__column:not(:last-child) {
   margin-right: 30px;
 }
-.cards__columns__column__title {
+.cards__columns .columns__column .column__title {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
+  font-size: 1.5rem;
+  line-height: 137.5%;
   text-align: center;
   text-transform: capitalize;
   color: #000000;
@@ -850,10 +854,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 369px;
+  width: 100%;
   height: 100px;
 }
-.cards__columns__column__text {
+.cards__columns .columns__column .column__text {
   text-align: center;
   color: #000000;
   display: -webkit-box;
@@ -865,6 +869,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 105px;
 }
 
 .options__body {
