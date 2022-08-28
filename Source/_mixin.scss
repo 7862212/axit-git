@@ -1,0 +1,25 @@
+@mixin font($family, $style, $weight, $size, $color) {
+	font-family: $family;
+	font-style: $style;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}
+
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+$font-48: 48px;
+$font-36: 36px;
+$font-30: 30px;
+$font-24: 24px;
+$font-20: 20px;
+$font-18: 18px;
+$font-16: 16px;
+$font-15: 15px;
+$font-14: 14px;
+
+$family: "Raleway", sans-serif;
+$family: "Open Sans", sans-serif;

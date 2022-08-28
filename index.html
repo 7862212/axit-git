@@ -20,7 +20,7 @@
 					</a>
 				</div>
 
-				<div class="menu__burger burger ">
+				<div class="burger-menu burger ">
 
 					<div class="burger__logo">
 						<a href="" class="burger__logo_link">
@@ -143,20 +143,32 @@
 
 							<fieldset class="serach-form__field">
 
-								<label class="serach-form__title" for="">
+								<label class="serach-form__headline headline" for="">
 									<h4>
-										Try Your <span class="serach-form__title_bg"> FREE</span> Trial Today
+										Try Your <span class="serach-form__headline_bg"> FREE</span> Trial Today
 									</h4>
 								</label>
 
-								<input class="serach-form__inp" type="text" name="username" id="username" placeholder="Name">
-								<input class="serach-form__inp" type="email" name="email" id="email" placeholder="Email">
-								<input class="serach-form__inp" type="password" name="password" id="password"
-									placeholder="Password">
+								<div class="serach-form__content_name">
+									<input class="serach-form__inp" type="text" name="username" id="username" placeholder="">
+									<label class="serach-form__label" for="username">Name</label>
+								</div>
+
+								<div class="serach-form__content_email">
+									<input class="serach-form__inp" type="email" name="email" id="email" placeholder="">
+									<label class="serach-form__label" for="email">Email</label>
+								</div>
+
+								<div class="serach-form__content_password">
+									<input class="serach-form__inp" type="password" name="password" id="password" placeholder="">
+									<label class="serach-form__label" for="password">Password</label>
+								</div>
 							</fieldset>
 
 							<fieldset class="serach-form__field_btn">
-								<input class="serach-form__button" type="submit" name="submit" value="Get Started">
+								<button class="serach-form__button" type="submit" name="submit">
+									Get Started
+								</button>
 							</fieldset>
 						</form>
 					</div>
@@ -168,7 +180,7 @@
 
 					<div class="social-media__body">
 
-						<div class="social-media__title">
+						<div class="social-media__headline headline">
 							<h4>
 								Social Media
 							</h4>
@@ -222,97 +234,6 @@
 			</section>
 
 			<!--<section class="page__tabs tabs">
-				<div class="tabs__container container">
-
-					<div class="tabs__content">
-
-						<ul class="tabs__tab">
-
-							<li>
-								<a href="#tab1">
-									tab 1
-								</a>
-							</li>
-
-							<li>
-								<a href="#tab2">
-									tab 2
-								</a>
-							</li>
-
-							<li>
-								<a href="#tab3">
-									tab 3
-								</a>
-							</li>
-						</ul>
-
-						<div class="tabs__inside-tab inside-tab">
-
-							<div class="inside-tab__desc">
-
-								<div class="inside-tab__title">
-									<h3>
-										Tabs with soft transitioning effect.
-									</h3>
-								</div>
-
-								<div class="inside-tab__text">
-									<ul class="inside-tab__item">
-
-										<li id="tab1">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-												bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-												justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-												penatibus et magnis dis parturient montes.
-											</p>
-											<p>
-												Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quod quibusdam
-												repellat sunt blanditiis officiis nisi odit illum possimus beatae, molestias non ut
-												at,
-												fugiat quia unde officia! Optio, id!
-											</p>
-										</li>
-
-										<li id="tab2">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											</p>
-											<p>
-												Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quod quibusdam
-												repellat sunt blanditiis officiis nisi odit illum possimus beatae, molestias non ut
-												at,
-												fugiat quia unde officia! Optio, id!
-											</p>
-										</li>
-
-										<li id="tab3">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-												bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-												justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-												penatibus et magnis dis parturient montes.
-											</p>
-											<p>
-												Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-											</p>
-										</li>
-									</ul>
-								</div>
-
-								<button type="button" class="inside-tab__button button_bg">
-									Download
-								</button>
-							</div>
-
-							<div class="inside-tab__pic"></div>
-						</div>
-					</div>
-				</div>
-			</section>-->
-
-			<section class="page__tabs tabs">
 				<div class="tabs__container container">
 
 					<div class="tabs__content tabs-content">
@@ -408,6 +329,141 @@
 						<div class="tabs-content__pic"></div>
 					</div>
 				</div>
+			</section>-->
+
+			<section class="block__tabs tabs">
+				<div class="tabs__container container">
+					<div class="tabs__content content">
+
+						<div class="content__tab tab">
+							<input class="tab__input" type="radio" name="tab" id="tab1" checked>
+							<label class="tab__label" for="tab1" title="tab1">tab1</label>
+
+							<div class="tab__section">
+
+								<div class="tab__body">
+									<div class="tab__column">
+										<div class="tab__title">
+											<h3>
+												Tabs with soft transitioning effect.
+											</h3>
+										</div>
+
+										<div class="tab__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est ullam tempora
+												voluptate
+												libero magnam voluptates beatae officia ut facere, cum magni, quam mollitia, ex
+												quidem
+												a
+												molestiae sequi facilis.
+											</p>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est ullam tempora
+												voluptate
+												libero magnam voluptates beatae officia ut facere, cum magni, quam mollitia, ex
+												quidem.
+											</p>
+										</div>
+
+										<div class="tab__button">
+											<button type="button" class="tab__btn button_bg">
+												Download
+											</button>
+										</div>
+									</div>
+
+									<div class="tab__pic_tab1">
+										<!--<img src="./img/tabs/tab1.jpg" alt="">-->
+									</div>
+								</div>
+							</div>
+
+							<input class="tab__input" type="radio" name="tab" id="tab2">
+							<label class="tab__label" for="tab2" title="tab2">tab2</label>
+
+							<div class="tab__section">
+
+								<div class="tab__body">
+									<div class="tab__column">
+										<div class="tab__title">
+											<h3>
+												Tabs with soft transitioning effect.
+											</h3>
+										</div>
+
+										<div class="tab__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est ullam tempora
+												voluptate
+												libero magnam voluptates beatae officia ut facere, cum magni, quam mollitia, ex
+												quidem
+												a
+												molestiae sequi facilis.
+											</p>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum ipsam et at
+												necessitatibus delectus doloribus illum cupiditate eveniet fugiat vel nisi autem
+												maxime, sapiente perspiciatis.
+											</p>
+										</div>
+
+										<div class="tab__button">
+											<button type="button" class="tab__btn button_bg">
+												Download
+											</button>
+										</div>
+									</div>
+
+									<div class="tab__pic_tab2">
+										<!--<img src="./img/tabs/tab2.jpg" alt="">-->
+									</div>
+								</div>
+							</div>
+
+							<input class="tab__input" type="radio" name="tab" id="tab3">
+							<label class="tab__label" for="tab3" title="tab3">tab3</label>
+
+							<div class="tab__section">
+
+								<div class="tab__body">
+									<div class="tab__column">
+										<div class="tab__title">
+											<h3>
+												Tabs with soft transitioning effect.
+											</h3>
+										</div>
+
+										<div class="tab__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est ullam tempora
+												voluptate
+												libero magnam voluptates beatae officia ut facere, cum magni, quam mollitia, ex
+												quidem
+												a
+												molestiae sequi facilis.
+											</p>
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione corrupti.
+												Quam culpa, soluta facere sunt.
+											</p>
+										</div>
+
+										<div class="tab__button">
+											<button type="button" class="tab__btn button_bg">
+												Download
+											</button>
+										</div>
+									</div>
+
+									<div class="tab__pic_tab3">
+										<!--<img src="./img/tabs/tab3.jpg" alt="">-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section class="page__cards cards">
@@ -415,8 +471,8 @@
 
 					<div class="cards__body">
 
-						<div class="cards__title">
-							<h2 class="cards__title">
+						<div class="cards__title title">
+							<h2>
 								WHY THIS IS AWESOME
 							</h2>
 						</div>
@@ -433,7 +489,7 @@
 								<div class="column__pic">
 									<img src="./img/cards/about_icon_1.png" alt="icon">
 								</div>
-								<div class="column__title">
+								<div class="column__headline headline">
 									Thoughtful Design
 								</div>
 								<div class="column__text">
@@ -447,7 +503,7 @@
 								<div class="column__pic">
 									<img src="./img/cards/about_icon_2.png" alt="icon">
 								</div>
-								<div class="column__title">
+								<div class="column__headline headline">
 									Thoughtful Design
 								</div>
 								<div class="column__text">
@@ -461,7 +517,7 @@
 								<div class="column__pic">
 									<img src="./img/cards/about_icon_3.png" alt="icon">
 								</div>
-								<div class="column__title">
+								<div class="column__headline headline">
 									Thoughtful Design
 								</div>
 								<div class="column__text">
@@ -480,7 +536,7 @@
 
 					<div class="options__body">
 
-						<div class="options__title">
+						<div class="options__title title">
 							<h2>
 								pricing options
 							</h2>
@@ -495,11 +551,11 @@
 						<div class="options__columns options-columns">
 
 							<div class="options-columns__column ">
-								<h4 class="options-columns__title">
+								<h4 class="options-columns__headline headline">
 									Basic
 								</h4>
 
-								<h2 class="options-columns__price">
+								<h2 class="options-columns__price title">
 									&#36;10
 								</h2>
 
@@ -528,11 +584,11 @@
 							</div>
 
 							<div class="options-columns__column ">
-								<h4 class="options-columns__title">
+								<h4 class="options-columns__headline headline">
 									Optima
 								</h4>
 
-								<h2 class="options-columns__price">
+								<h2 class="options-columns__price title">
 									&#36;20
 								</h2>
 
@@ -561,11 +617,11 @@
 							</div>
 
 							<div class="options-columns__column ">
-								<h4 class="options-columns__title">
+								<h4 class="options-columns__headline headline">
 									Pro
 								</h4>
 
-								<h2 class="options-columns__price">
+								<h2 class="options-columns__price title">
 									&#36;30
 								</h2>
 
@@ -602,7 +658,7 @@
 
 					<div class="customers__body">
 
-						<div class="customers__title">
+						<div class="customers__title title">
 							<h2>
 								what our customers are saying
 							</h2>
@@ -630,7 +686,7 @@
 									</div>
 
 									<div class="customers-column__initials">
-										<div class="customers-column__name">
+										<div class="customers-column__name headline">
 											Davis Rhiel Madsen
 										</div>
 										<div class="customers-column__office">
@@ -654,7 +710,7 @@
 									</div>
 
 									<div class="customers-column__initials">
-										<div class="customers-column__name">
+										<div class="customers-column__name headline">
 											Jaydon Rosser
 										</div>
 										<div class="customers-column__office">
@@ -678,7 +734,7 @@
 									</div>
 
 									<div class="customers-column__initials">
-										<div class="customers-column__name">
+										<div class="customers-column__name headline">
 											Cooper Dorwart
 										</div>
 										<div class="customers-column__office">
@@ -698,7 +754,7 @@
 
 					<div class="axure-design__banner">
 
-						<div class="axure-design__title">
+						<div class="axure-design__title title">
 							<h2>
 								STYLISH AXURE DESIGN
 							</h2>
@@ -722,12 +778,14 @@
 				<div class="contact__container container">
 
 					<div class="contact__body">
-						<div class="contact__title">
+						<div class="contact__title title">
 							<h2>
 								contact us
 							</h2>
 						</div>
+
 						<div class="contact__line"></div>
+
 						<div class="contact__subtitle">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						</div>
@@ -736,10 +794,20 @@
 
 							<fieldset class="serach-form__body">
 
-								<input class="serach-form__input" type="text" name="username" id="username" placeholder="Name">
-								<input class="serach-form__input" type="email" name="email" id="email" placeholder="Email">
-								<input class="serach-form__input" type="password" name="password" id="password"
-									placeholder="Password">
+								<div class="serach-form__content_name">
+									<input class="serach-form__inp" type="text" name="username" id="username" placeholder="">
+									<label class="serach-form__label" for="username">Name</label>
+								</div>
+
+								<div class="serach-form__content_email">
+									<input class="serach-form__inp" type="email" name="email" id="email" placeholder="">
+									<label class="serach-form__label" for="email">Email</label>
+								</div>
+
+								<div class="serach-form__content_password">
+									<input class="serach-form__inp" type="password" name="password" id="password" placeholder="">
+									<label class="serach-form__label" for="password">Password</label>
+								</div>
 							</fieldset>
 
 							<fieldset class="serach-form__comments">
