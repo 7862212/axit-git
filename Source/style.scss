@@ -195,7 +195,7 @@ body {
 	// .burger__toggle-button
 	&__toggle-button {
 		position: fixed;
-		top: 4.6%;
+		top: 4%;
 		right: 40px;
 		height: 20px;
 		width: 30px;
@@ -538,6 +538,10 @@ input:checked~nav {
 		max-width: 270px;
 		width: 100%;
 
+		@media (min-width: 1173px) {
+			margin-top: calc((100vw - 992px)/(1173 - 992) * (42 - 31) + 31px);
+			margin-bottom: calc((100vw - 992px)/(1173 - 992) * (42 - 31) + 31px);
+		}
 		@media (min-width: 992px) and (max-width: 1173px) {
 			margin-top: calc((100vw - 992px)/(1173 - 992) * (42 - 31) + 31px);
 			margin-bottom: calc((100vw - 992px)/(1173 - 992) * (42 - 31) + 31px);
@@ -943,8 +947,8 @@ input:checked~nav {
 	&__tabs {
 		margin-top: 99px;
 
-		@media (min-width: 320px) and (max-width: 479px) {
-			margin-top: calc((100vw - 320px)/(1173 - 320) * (99 - 4) + 41px);
+		@media (min-width: 320px) and (max-width: 1173px) {
+			margin-top: calc((100vw - 320px)/(1173 - 320) * (99 - 41) + 41px);
 		}
 	}
 }
@@ -1102,7 +1106,7 @@ input:checked~nav {
 
 	// .tab__text
 	&__text {
-		overflow: scroll;
+		overflow: auto;
 		text-align: justify;
 
 		@media (min-width: 992px) and (max-width: 1173px) {
@@ -1277,6 +1281,12 @@ input:checked~nav {
 	// .cards__columns
 	&__columns {
 		display: flex;
+
+		@media (min-width: 320px) and (max-width: 660px) {
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 
