@@ -2065,7 +2065,7 @@ input:checked ~ nav ul li {
     margin-bottom: calc((100vw - 320px) / 671 * 8 + 24px);
   }
 }
-@media (min-width: 320px) and (max-width: 991px) and (max-width: 320px) {
+@media (max-width: 320px) {
   .customers__subtitle {
     margin: 24px 0;
   }
@@ -2218,6 +2218,18 @@ input:checked ~ nav ul li {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 320px) and (max-width: 1173px) {
+  .axure-design__container {
+    padding-top: calc((100vw - 320px) / 853 * 50 + 0px);
+    padding-bottom: calc((100vw - 320px) / 853 * -8 + 58px);
+  }
+}
+@media (max-width: 320px) {
+  .axure-design__container {
+    padding-top: 0px;
+    padding-bottom: 58px;
+  }
+}
 .axure-design__title {
   text-align: center;
   text-transform: uppercase;
@@ -2233,11 +2245,16 @@ input:checked ~ nav ul li {
           justify-content: center;
   height: 150px;
 }
+@media (max-width: 992px) {
+  .axure-design__title {
+    height: 120px;
+    margin: 0 16px 0 16px;
+  }
+}
 .axure-design__line {
   width: 170px;
   border: 1px solid #FFFFFF;
   margin: 0 auto;
-  margin-bottom: 40px;
 }
 .axure-design__subtitle {
   text-align: center;
@@ -2252,12 +2269,50 @@ input:checked ~ nav ul li {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 73px;
+  margin-top: 40px;
+}
+@media (min-width: 992px) and (max-width: 1173px) {
+  .axure-design__subtitle {
+    margin-top: calc((100vw - 992px) / 181 * 8 + 32px);
+    margin-bottom: calc((100vw - 992px) / 181 * 41 + 32px);
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .axure-design__subtitle {
+    margin-top: calc((100vw - 320px) / 671 * 16 + 16px);
+    margin-bottom: calc((100vw - 320px) / 671 * -34 + 66px);
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .axure-design__subtitle {
+    margin: 16px 16px 66px 16px;
+  }
 }
 .axure-design__button {
   max-width: 370px;
+  width: 100%;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid #FFFFFF;
+}
+@media (min-width: 992px) and (max-width: 1173px) {
+  .axure-design__button {
+    max-width: calc((100vw - 320px) / 671 * 52 + 318px);
+  }
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .axure-design__button {
+    max-width: calc((100vw - 320px) / 671 * 31 + 287px);
+  }
+}
+@media (max-width: 320px) {
+  .axure-design__button {
+    max-width: 89.6875vw;
+  }
 }
 
 .contact__container {

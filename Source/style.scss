@@ -1686,10 +1686,9 @@ input:checked~nav {
 		@media (min-width: 320px) and (max-width: 991px) {
 			margin-top: calc((100vw - 320px)/(991 - 320) * (32 - 24) + 24px);
 			margin-bottom: calc((100vw - 320px)/(991 - 320) * (32 - 24) + 24px);
-
-			@media (max-width: 320px) {
-				margin: 24px 0;
-			}
+		}
+		@media (max-width: 320px) {
+			margin: 24px 0;
 		}
 	}
 
@@ -1819,6 +1818,15 @@ input:checked~nav {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		@media (min-width: 320px) and (max-width: 1173px) {
+			padding-top: calc((100vw - 320px)/(1173 - 320) * (50 - 0) + 0px);
+			padding-bottom: calc((100vw - 320px)/(1173 - 320) * (50 - 58) + 58px);
+		}
+		@media (max-width: 320px) {
+			padding-top: 0px;
+			padding-bottom: 58px;
+		}
 	}
 
 	// .axure-design__banner
@@ -1833,13 +1841,17 @@ input:checked~nav {
 		align-items: center;
 		justify-content: center;
 		height: 150px;
+
+		@media (max-width: 992px) {
+			height: 120px;
+			margin: 0 16px 0 16px;
+		}
 	}
 
 	&__line {
 		width: 170px;
 		border: 1px solid #FFFFFF;
 		margin: 0 auto;
-		margin-bottom: 40px;
 	}
 
 	// .axure-design__subtitle
@@ -1850,14 +1862,44 @@ input:checked~nav {
 		align-items: center;	
 		justify-content: center;
 		margin-bottom: 73px;
+		margin-top: 40px;
+
+		@media (min-width: 992px) and (max-width: 1173px) {
+				margin-top: calc((100vw - 992px)/(1173 - 992) * (40 - 32) + 32px);
+				margin-bottom: calc((100vw - 992px)/(1173 - 992) * (73 - 32) + 32px);
+				margin-right: 16px;
+				margin-left: 16px;
+			}
+		
+			@media (min-width: 320px) and (max-width: 991px) {
+				margin-top: calc((100vw - 320px)/(991 - 320) * (32 - 16) + 16px);
+				margin-bottom: calc((100vw - 320px)/(991 - 320) * (32 - 66) + 66px);
+				margin-right: 16px;
+				margin-left: 16px;
+			}
+		
+			@media (max-width: 320px) {
+				margin: 16px 16px 66px 16px;
+			}
 	}
 
 	// .axure-design__button
 	&__button {
 		max-width: 370px;
+		width: 100%;
 		margin: 0 auto;
 		background: rgba(0, 0, 0, 0.5);
 		border: 1px solid #FFFFFF;
+
+		@media (min-width: 992px) and (max-width: 1173px) {
+			max-width: calc((100vw - 320px)/(991 - 320) * (370 - 318) + 318px);
+		}
+		@media (min-width: 320px) and (max-width: 991px) {
+			max-width: calc((100vw - 320px)/(991 - 320) * (318 - 287) + 287px);
+		}
+		@media (max-width: 320px) {
+			max-width: calc(287 / 320 * 100vw);
+		}
 	}
 }
 
