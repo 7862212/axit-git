@@ -628,12 +628,23 @@
 
 						<div class="customers__columns columns">
 
-							<div class="columns__column column">
+							<input class="columns__input" type="radio" name="columns" id="column1">
+
+							<input class="columns__input" type="radio" name="columns" id="column2" checked>
+
+							<input class="columns__input" type="radio" name="columns" id="column3">
+
+							<div class="columns__tab">
+								<label class="columns__label" for="column1"></label>
+								<label class="columns__label" for="column2"></label>
+								<label class="columns__label" for="column3"></label>
+							</div>
+
+							<section class="columns__column column" id="content-column1">
 
 								<div class="column__text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
-									repellat similique
-									odio aspernatur ex, architecto eaque quo suscipit.
+									repellat similique.
 								</div>
 
 								<div class="column__card">
@@ -653,12 +664,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</section>
 
-							<input class="columns__input" type="radio" name="columns" id="columns1">
-							<label class="columns__label" for="columns1"></label>
-
-							<div class="columns__column column">
+							<section class="columns__column column" id="content-column2">
 
 								<div class="column__text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
@@ -683,16 +691,12 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</section>
 
-							<input class="columns__input" type="radio" name="columns" id="columns2" checked>
-							<label class="columns__label" for="columns2"></label>
-
-							<div class="columns__column column">
+							<section class="columns__column column" id="content-column3">
 
 								<div class="column__text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
-									repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 								</div>
 
 								<div class="column__card">
@@ -712,10 +716,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
-
-							<input class="columns__input" type="radio" name="columns" id="columns3">
-							<label class="columns__label" for="columns3"></label>
+							</section>
 
 						</div>
 					</div>

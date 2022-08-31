@@ -1688,7 +1688,6 @@ input:checked~nav {
 		align-items: center;
 		max-width: 370px;
 		width: 100%;
-		order: 1;
 
 		&:not(:last-child) {
 			margin-right: 15px;
@@ -1705,6 +1704,10 @@ input:checked~nav {
 				margin-left: calc((100vw - 661px)/(992 - 661) * (15 - 7.5) + 7.5px);
 			}
 		}
+	}
+
+	& section {
+		order: 1;
 
 		@media (max-width: 660px) {
 			display: none;
@@ -1715,7 +1718,6 @@ input:checked~nav {
 
 	// .columns__label
 	&__label {
-		order: 99;
 		margin-top: 23px;
 		display: flex;
 		display: none;
@@ -1727,6 +1729,7 @@ input:checked~nav {
 		border-radius: 100%;
 
 		&:hover {
+			cursor: pointer;
 			background: #86878B;
 			transform: scale(1.2);
 			transition: 0.5s linear;
@@ -1748,16 +1751,24 @@ input:checked~nav {
 		}
 	}
 
+	// .columns__tab
+	&__tab {
+		display: flex;
+		order: 99;
+	}
+
 	// .columns__input
 	&__input {
 		display: none;
 	}
 
-	&__input:checked + label {
+	&__input:checked + &__label {
 		background: #86878B;
 	}
 
-	&__input:checked + label + .column {
+	#column1:checked ~ #content-column1,
+	#column2:checked ~ #content-column2,
+	#column3:checked ~ #content-column3 {
 		display: block;
 	}
 }
@@ -1839,8 +1850,6 @@ input:checked~nav {
 	// .column__office
 	&__office {}
 }
-
-.headline {}
 
 //---------------------------------------------	AXURE DESIGN-------------------------//
 
