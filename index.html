@@ -149,19 +149,17 @@
 									</h4>
 								</label>
 
-								<div class="serach-form__content_name">
-									<input class="serach-form__inp" type="text" name="username" id="username" placeholder="">
-									<label class="serach-form__label" for="username">Name</label>
+								<div class="serach-form__content">
+									<input class="serach-form__input" type="text" name="username" id="username" placeholder="Name">
 								</div>
 
-								<div class="serach-form__content_email">
-									<input class="serach-form__inp" type="email" name="email" id="email" placeholder="">
-									<label class="serach-form__label" for="email">Email</label>
+								<div class="serach-form__content">
+									<input class="serach-form__input" type="email" name="email" id="email" placeholder="Email">
 								</div>
 
-								<div class="serach-form__content_password">
-									<input class="serach-form__inp" type="password" name="password" id="password" placeholder="">
-									<label class="serach-form__label" for="password">Password</label>
+								<div class="serach-form__content">
+									<input class="serach-form__input" type="password" name="password" id="password"
+										placeholder="Password">
 								</div>
 							</fieldset>
 
@@ -381,16 +379,16 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						</div>
 
-						<div class="cards__columns">
+						<div class="cards__columns columns-cards">
 
-							<div class="columns__column column">
-								<div class="column__pic">
+							<div class="columns-cards__column column-card">
+								<div class="column-card__pic">
 									<img src="./img/cards/about_icon_1.png" alt="icon">
 								</div>
-								<div class="column__headline headline">
+								<div class="column-card__headline headline">
 									Thoughtful Design
 								</div>
-								<div class="column__text">
+								<div class="column-card__text">
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing
 									</p>
@@ -401,14 +399,15 @@
 								</div>
 							</div>
 
-							<div class="columns__column column">
-								<div class="column__pic">
+							<div class="columns-cards__column column-card">
+
+								<div class="column-card__pic">
 									<img src="./img/cards/about_icon_2.png" alt="icon">
 								</div>
-								<div class="column__headline headline">
+								<div class="column-card__headline headline">
 									Thoughtful Design
 								</div>
-								<div class="column__text">
+								<div class="column-card__text">
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing
 									</p>
@@ -419,14 +418,15 @@
 								</div>
 							</div>
 
-							<div class="columns__column column">
-								<div class="column__pic">
+							<div class="columns-cards__column column-card">
+
+								<div class="column-card__pic">
 									<img src="./img/cards/about_icon_3.png" alt="icon">
 								</div>
-								<div class="column__headline headline">
+								<div class="column-card__headline headline">
 									Thoughtful Design
 								</div>
-								<div class="column__text">
+								<div class="column-card__text">
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing
 									</p>
@@ -580,84 +580,108 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						</div>
 
-						<div class="customers__columns">
+						<div class="customers__columns columns">
 
-							<div class="customers__column customers-column">
-								<div class="customers-column__text">
+							<div class="columns__column column">
+
+								<div class="column__text">
 									Lorem ipsum dolor sit amet,
 									consectetur adipisicing elit. Doloribus
 									accusamus expedita repellat similique
 									odio aspernatur ex, architecto eaque
 									quo suscipit.
 								</div>
-								<div class="customers-column__card">
-									<div class="customers-column__foto">
+
+								<div class="column__card">
+
+									<div class="column__foto">
 										<img src="./img/customers/Davis.jpg" alt="">
 									</div>
 
-									<div class="customers-column__initials">
-										<div class="customers-column__name headline">
+									<div class="column__initials">
+
+										<div class="column__name headline">
 											Davis Rhiel Madsen
 										</div>
-										<div class="customers-column__office">
+
+										<div class="column__office">
 											Manager
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="customers__column customers-column">
-								<div class="customers-column__text">
+							<input class="columns__input" type="radio" name="columns" id="columns1">
+							<label class="columns__label" for="columns1"></label>
+
+							<div class="columns__column column">
+
+								<div class="column__text">
 									Lorem ipsum dolor sit amet,
 									consectetur adipisicing elit. Doloribus
 									accusamus expedita repellat similique
 									odio aspernatur ex, architecto eaque
 									quo suscipit.
 								</div>
-								<div class="customers-column__card">
-									<div class="customers-column__foto">
+
+								<div class="column__card">
+
+									<div class="column__foto">
 										<img src="./img/customers/Jaydon.jpg" alt="">
 									</div>
 
-									<div class="customers-column__initials">
-										<div class="customers-column__name headline">
+									<div class="column__initials">
+
+										<div class="column__name headline">
 											Jaydon Rosser
 										</div>
-										<div class="customers-column__office">
+
+										<div class="column__office">
 											Manager
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="customers__column customers-column">
-								<div class="customers-column__text">
+							<input class="columns__input" type="radio" name="columns" id="columns2" checked>
+							<label class="columns__label" for="columns2"></label>
+
+							<div class="columns__column column">
+
+								<div class="column__text">
 									Lorem ipsum dolor sit amet,
 									consectetur adipisicing elit. Doloribus
 									accusamus expedita repellat similique
 									odio aspernatur ex, architecto eaque
 									quo suscipit.
 								</div>
-								<div class="customers-column__card">
-									<div class="customers-column__foto">
+								<div class="column__card">
+
+									<div class="column__foto">
 										<img src="./img/customers/Cooper .jpg" alt="">
 									</div>
 
-									<div class="customers-column__initials">
-										<div class="customers-column__name headline">
+									<div class="column__initials">
+
+										<div class="column__name headline">
 											Cooper Dorwart
 										</div>
-										<div class="customers-column__office">
+
+										<div class="column__office">
 											Manager
 										</div>
 									</div>
 								</div>
 							</div>
+
+							<input class="columns__input" type="radio" name="columns" id="columns3">
+							<label class="columns__label" for="columns3"></label>
 
 						</div>
 					</div>
 				</div>
 			</section>
+
 
 			<section class="page__axure-design axure-design">
 				<div class="axure-design__container container">
@@ -688,6 +712,7 @@
 				<div class="contact__container container">
 
 					<div class="contact__body">
+
 						<div class="contact__title title">
 							<h2>
 								contact us
@@ -700,29 +725,27 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						</div>
 
-						<form action="" class="contact__serach-form serach-form">
+						<form action="" class="contact__serach serach">
 
-							<fieldset class="serach-form__body">
+							<fieldset class="serach__body">
 
-								<div class="serach-form__content_name">
-									<input class="serach-form__inp" type="text" name="username" id="username" placeholder="">
-									<label class="serach-form__label" for="username">Name</label>
+								<div class="serach__content">
+									<input class="serach__input" type="text" name="username" id="username" placeholder="Name">
 								</div>
 
-								<div class="serach-form__content_email">
-									<input class="serach-form__inp" type="email" name="email" id="email" placeholder="">
-									<label class="serach-form__label" for="email">Email</label>
+								<div class="serach__content">
+									<input class="serach__input" type="email" name="email" id="email" placeholder="Email">
 								</div>
 
-								<div class="serach-form__content_password">
-									<input class="serach-form__inp" type="password" name="password" id="password" placeholder="">
-									<label class="serach-form__label" for="password">Password</label>
+								<div class="serach__content">
+									<input class="serach__input" type="password" name="password" id="password"
+										placeholder="Password">
 								</div>
 							</fieldset>
 
-							<fieldset class="serach-form__comments">
+							<fieldset class="serach__comments">
 
-								<textarea class="serach-form__message" name="message" placeholder="Message"></textarea>
+								<textarea class="serach__message" name="message" placeholder="Message"></textarea>
 							</fieldset>
 						</form>
 
